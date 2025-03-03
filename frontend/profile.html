@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Driving Dashboard</title>
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gamified Driving Dashboard</h1>
+        
+        <div class="profile">
+            <h3>Profile</h3>
+            <p><strong>Username:</strong> Lingan</p>
+            <p><strong>Vehicle Model:</strong> Tesla Model 3</p>
+            <p><strong>Number Plate:</strong> TN03 H1234</p>
+            <p><strong>Points:</strong> <span id="points">43</span></p>
+        </div>
+        
+        <h3>Driving Score</h3>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p id="score">Score: 69%</p>
+        
+        <div class="leaderboard">
+            <h3>Leaderboard</h3>
+            <ul id="leaderboard-list">
+                <li>1. Alex - 95 points</li>
+                <li>2. Jamie - 90 points</li>
+                <li>3. Sam - 85 points</li>
+            </ul>
+        </div>
+        
+        <div class="challenges">
+            <h3>Challenges</h3>
+            <ul id="challenges-list">
+                <li>Drive 100 miles without speeding</li>
+                <li>Reduce fuel consumption by 10%</li>
+            </ul>
+        </div>
+
+        <div class="achievements">
+            <h3>Achievements</h3>
+            <ul id="achievements-list">
+                <li>Safe Driver Badge - 200 miles accident-free</li>
+                <li>Eco-Friendly - 15% fuel savings</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let score = 69;
+        let points = 1000;
+        function updateScore() {
+            document.getElementById("progress").style.width = score + "%";
+        }
+        setInterval(updateScore, 0);
+    </script>
+</body>
+</html>

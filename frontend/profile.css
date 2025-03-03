@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 10px;
+    background: #eef;
+    border-radius: 8px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    background: green;
+    transition: width 0.5s;
+}
+
+.leaderboard, .challenges, .achievements {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    background: #eef;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
