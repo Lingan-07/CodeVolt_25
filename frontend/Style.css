@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #004d40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#hero {
+    background: url('./asserts/electric-vehicle.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;    
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+#about {
+    background: url('./asserts/about_1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#features {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('./asserts/ev.png') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+#features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#features h2, #features ul {
+    position: relative;
+    z-index: 2;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#features li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+}
+
+
+
+
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    background: powderblue;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #155724;
+}
+
+#services p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #155724;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact button {
+    padding: 15px;
+    background: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 50%; /* Makes the button wider */
+    text-align: center;
+}
+
+#contact button:hover {
+    background: #218838;
+}
+
+
+
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
