@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction App</title>
+  <link rel="stylesheet" href="predictive.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prediction App</h1>
+    <form id="prediction-form">
+      <label for="features">Enter Features (comma separated):</label>
+      <input type="text" id="features" name="features" placeholder="e.g., 120.0, 300.5, 80.2, 2.0, 45.6, 70.3">
+      <button type="submit">Predict</button>
+    </form>
+    <div id="result">
+      <h2>Prediction Result: <span id="prediction-value">N/A</span></h2>
+    </div>
+  </div>
+
+  <script src="predictive.js"></script>
+</body>
+</html>
